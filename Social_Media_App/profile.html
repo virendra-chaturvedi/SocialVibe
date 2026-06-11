@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+    <div class="app-container">
+        
+        <!-- App Primary Left Navigation Section -->
+        <aside class="sidebar">
+            <h2 class="logo"><i class="fa-solid fa-share-nodes"></i> SocialVibe</h2>
+            <nav class="nav-menu">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="messages.html"><i class="fa-solid fa-message"></i> Messages</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="profile.html" class="active"><i class="fa-solid fa-user"></i> Profile</a>
+            </nav>
+        </aside>
+ 
+        <!-- Master Dashboard Framework Structure -->
+        <main class="profile-section">
+            <div class="profile-header-card">
+                <div class="cover-photo-wrapper">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200" id="coverDisplay" class="live-cover" alt="Cover">
+                    <input type="file" id="coverInput" accept="image/*" class="hidden-file-input">
+                </div>
+                 
+                <div class="profile-details">
+                    <div class="avatar-photo-wrapper">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300" id="avatarDisplay" class="live-avatar" alt="Avatar">
+                        <input type="file" id="avatarInput" accept="image/*" class="hidden-file-input">
+                        <div class="avatar-overlay" id="avatarTrigger"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                     
+                    <div class="user-meta">
+                        <h2>Virendra Chaturvedi</h2>
+                        <p class="bio">Web Developer & UI/UX Designer | Building things with code 💻</p>
+                        <div class="stats">
+                            <span><strong>124</strong> Posts</span>
+                            <span><strong>4.5k</strong> Followers</span>
+                            <span><strong>382</strong> Following</span>
+                        </div>
+                    </div>
+                    <button class="edit-profile-btn" id="profileEditBtn"><i class="fa-solid fa-camera"></i> Change Cover</button>
+                </div>
+            </div>
+ 
+            <div class="profile-content-area">
+                <div class="content-tabs">
+                    <span class="tab active" id="tab-btn-posts">My Posts</span>
+                    <span class="tab" id="tab-btn-saved">Saved</span>
+                    <span class="tab" id="tab-btn-tagged">Tagged</span>
+                </div>
+                 
+                <div class="tab-panels-container">
+                    <div class="tab-panel-view" id="panel-my-posts">
+                        <div class="posts-grid">
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Post Update 1</p></div>
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Post Update 2</p></div>
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Post Update 3</p></div>
+                        </div>
+                    </div>
+                    <div class="tab-panel-view hidden" id="panel-saved">
+                        <div class="empty-state-msg">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <p>No saved posts yet. Bookmarked items will show here.</p>
+                        </div>
+                    </div>
+                    <div class="tab-panel-view hidden" id="panel-tagged">
+                        <div class="empty-state-msg">
+                            <i class="fa-regular fa-user-tag"></i>
+                            <p>Photos and posts you're tagged in will appear here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

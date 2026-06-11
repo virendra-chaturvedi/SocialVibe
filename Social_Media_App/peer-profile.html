@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe - View Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h2 class="logo"><i class="fa-solid fa-share-nodes"></i> SocialVibe</h2>
+            <nav class="nav-menu">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="messages.html"><i class="fa-solid fa-message"></i> Messages</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+            </nav>
+        </aside>
+ 
+        <!-- Friends Dynamic Profile Viewer Pane -->
+        <main class="profile-section">
+            <div class="profile-header-card">
+                <div class="cover-photo-wrapper">
+                    <img src="" id="peerCoverDisplay" class="live-cover" alt="Cover">
+                </div>
+                 
+                <div class="profile-details">
+                    <div class="avatar-photo-wrapper">
+                        <img src="" id="peerAvatarDisplay" class="live-avatar" alt="Avatar">
+                    </div>
+                     
+                    <div class="user-meta">
+                        <h2 id="peerNameDisplay">User Profile</h2>
+                        <p class="bio" id="peerBioDisplay">Loading professional bio details...</p>
+                        <div class="stats">
+                            <span id="peerPostsCount"><strong>0</strong> Posts</span>
+                            <span id="peerFollowersCount"><strong>0</strong> Followers</span>
+                            <span id="peerFollowingCount"><strong>0</strong> Following</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="profile-content-area">
+                <div class="content-tabs">
+                    <span class="tab active">Posts</span>
+                    <span class="tab">About</span>
+                </div>
+                 
+                <div class="tab-panels-container">
+                    <div class="tab-panel-view">
+                        <div class="posts-grid">
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Recent Activity 1</p></div>
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Recent Activity 2</p></div>
+                            <div class="grid-item-placeholder"><i class="fa-solid fa-table-cells"></i><p>Recent Activity 3</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

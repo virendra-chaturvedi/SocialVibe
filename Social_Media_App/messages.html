@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe - Messages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+    <div class="app-container">
+        
+        <!-- Navigation Sidebar Component -->
+        <aside class="sidebar">
+            <h2 class="logo"><i class="fa-solid fa-share-nodes"></i> SocialVibe</h2>
+            <nav class="nav-menu">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="messages.html" class="active"><i class="fa-solid fa-message"></i> Messages</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+            </nav>
+        </aside>
+ 
+        <!-- Messages Primary Dual Panel Layout Grid -->
+        <main class="inbox-container">
+            <div class="chat-list-panel">
+                <div class="panel-header">
+                    <h3>Chats</h3>
+                </div>
+                <div class="user-chats-list">
+                    <div class="chat-user-item active-user" id="user-link-jane">
+                        <div class="avatar default-av-3"></div>
+                        <div class="user-item-info">
+                            <h4>Jane Doe</h4>
+                            <p class="last-msg" id="last-msg-jane">Awesome, can't wait to see...</p>
+                        </div>
+                    </div>
+                    <div class="chat-user-item" id="user-link-alex">
+                        <div class="avatar default-av-1"></div>
+                        <div class="user-item-info">
+                            <h4>Alex Jones</h4>
+                            <p class="last-msg" id="last-msg-alex">Sure, let's meet tomorrow.</p>
+                        </div>
+                    </div>
+                    <div class="chat-user-item" id="user-link-sam">
+                        <div class="avatar default-av-2"></div>
+                        <div class="user-item-info">
+                            <h4>Sam Wilson</h4>
+                            <p class="last-msg" id="last-msg-sam">Check out my new post!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Expanded Thread Content Component Panel -->
+            <div class="full-chat-window">
+                <div class="chat-header">
+                    <div class="avatar" id="activeChatAvatar" style="cursor:pointer;"></div>
+                    <div>
+                        <h4 id="activeChatName" style="cursor:pointer;">Jane Doe</h4>
+                        <small style="color: #4cd137;">Online</small>
+                    </div>
+                </div>
+                <div class="chat-messages" id="fullChatContainer"></div>
+                <div class="chat-input-area">
+                    <input type="text" id="fullMsgInput" placeholder="Type a message...">
+                    <button id="fullSendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </main>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

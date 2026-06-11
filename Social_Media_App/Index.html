@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+    <div class="app-container">
+        
+        <!-- Left Sidebar Navigation Panel -->
+        <aside class="sidebar">
+            <h2 class="logo"><i class="fa-solid fa-share-nodes"></i> SocialVibe</h2>
+            <nav class="nav-menu">
+                <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="messages.html"><i class="fa-solid fa-message"></i> Messages</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+            </nav>
+        </aside>
+ 
+        <!-- Middle Feed View Panel -->
+        <main class="feed-section">
+            <div class="feed-header">
+                <h3>Home Feed</h3>
+                <button id="toggleChatBtn" class="toggle-btn"><i class="fa-solid fa-comments"></i> Toggle Chat</button>
+            </div>
+ 
+            <!-- Post Creation Area -->
+            <div class="create-post">
+                <input type="text" id="postInput" placeholder="What's on your mind, Virendra Chaturvedi?">
+                <button class="btn-post" id="submitPostBtn">Post</button>
+            </div>
+ 
+            <!-- Primary Core Feed Container -->
+            <div id="feedPostsContainer" class="feed-posts-wrapper">
+                
+                <!-- Dynamic User Added Posts Section -->
+                <div id="dynamicUserPostsWrapper"></div>
+
+                <!-- Alex Jones Static Post Card Component -->
+                <div class="post-card" id="static-post-alex">
+                    <div class="post-user">
+                        <div class="avatar default-av-1 view-peer-profile" data-peer="alex" style="cursor:pointer;"></div>
+                        <div>
+                            <h4 class="view-peer-profile" data-peer="alex" style="cursor:pointer;">Alex Jones</h4>
+                            <small>2 hours ago</small>
+                        </div>
+                    </div>
+                    <p class="post-content">Just started working on a new web development project! CSS Grid and Flexbox are lifesavers. 💻✨</p>
+                    <div class="post-actions">
+                        <button class="action-btn" onclick="handleStaticPostLike('alex')">
+                            <i class="fa-regular fa-thumbs-up" id="like-icon-alex"></i> <span id="like-text-alex">Like</span>
+                        </button>
+                        <button class="action-btn" onclick="toggleStaticCommentBox('alex')">
+                            <i class="fa-regular fa-comment"></i> Comment
+                        </button>
+                    </div>
+                    <div class="comments-section hidden" id="comment-box-alex">
+                        <div class="comments-list" id="comments-list-alex"></div>
+                        <div class="comment-input-box" style="margin-top: 10px;">
+                            <input type="text" placeholder="Write a comment..." class="custom-comment-box-input" id="comment-input-alex">
+                            <button class="btn-comment-send" onclick="submitStaticCommentAction('alex')"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sam Wilson Static Post Card Component -->
+                <div class="post-card" id="static-post-sam">
+                    <div class="post-user">
+                        <div class="avatar default-av-2 view-peer-profile" data-peer="sam" style="cursor:pointer;"></div>
+                        <div>
+                            <h4 class="view-peer-profile" data-peer="sam" style="cursor:pointer;">Sam Wilson</h4>
+                            <small>5 hours ago</small>
+                        </div>
+                    </div>
+                    <p class="post-content">Exploring the beauty of minimalist UI designs today.</p>
+                    <div class="post-actions">
+                        <button class="action-btn" onclick="handleStaticPostLike('sam')">
+                            <i class="fa-regular fa-thumbs-up" id="like-icon-sam"></i> <span id="like-text-sam">Like</span>
+                        </button>
+                        <button class="action-btn" onclick="toggleStaticCommentBox('sam')">
+                            <i class="fa-regular fa-comment"></i> Comment
+                        </button>
+                    </div>
+                    <div class="comments-section hidden" id="comment-box-sam">
+                        <div class="comments-list" id="comments-list-sam"></div>
+                        <div class="comment-input-box" style="margin-top: 10px;">
+                            <input type="text" placeholder="Write a comment..." class="custom-comment-box-input" id="comment-input-sam">
+                            <button class="btn-comment-send" onclick="submitStaticCommentAction('sam')"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+ 
+        <!-- Right Chat Panel for Jane Doe Component -->
+        <aside class="chat-section" id="sidebarChat">
+            <div class="chat-header">
+                <div class="avatar default-av-3 view-peer-profile" data-peer="jane" style="cursor:pointer;"></div>
+                <div>
+                    <h4 class="view-peer-profile" data-peer="jane" style="cursor:pointer;">Jane Doe</h4>
+                    <small style="color: #4cd137;">Online</small>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatContainer"></div>
+            <div class="chat-input-area">
+                <input type="text" id="msgInput" placeholder="Type a message...">
+                <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </aside>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
