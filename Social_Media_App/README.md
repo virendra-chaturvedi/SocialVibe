@@ -33,5 +33,5 @@ The focus of this task was to strengthen core JavaScript DOM manipulation and ma
 
 ## 🔗 Links
 
-* **Live Demo:** [👉 Click Here to View Live Project](https://virendra-chaturvedi.github.io/SocialVibe/)
-* **LinkedIn Video Walkthrough:** [👉 Watch Full Project Demo Video on LinkedIn]([https://www.linkedin.com/posts/virendra-chaturvedi-085a9822a_codealpha-codealpha-webdevelopment-ugcPost-7470885696711520256-WeCX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADl4J2UBKIIBdlbDxlKwupmv1mT6J-vKKeA])
+* **Live Demo:** [https://virendra-chaturvedi.github.io/SocialVibe/]
+* **LinkedIn Video Walkthrough:** [https://www.linkedin.com/posts/virendra-chaturvedi-085a9822a_codealpha-codealpha-webdevelopment-ugcPost-7470885696711520256-WeCX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADl4J2UBKIIBdlbDxlKwupmv1mT6J-vKKeA] 
